@@ -6,7 +6,7 @@
 <a class="logo" href="https://www.tudors.com/"><img alt="logo" src="https://www.tudors.com/Uploads/Images/logo.png"></a> <a class="logo Mlogo" href="/"><img alt="logo" src="https://www.tudors.com/Uploads/EditorUploads/mobillogonew.png"></a>
 <div class="MF">
 <div class="mflink H-blog">&nbsp;</div>
-<div class="mflink Magza"><a href="magazalarimiz.aspx"><img src="https://www.tudors.com/Uploads/Images/magza.png"> Mağazalar </a></div>
+<div class="mflink Magza"><a href="magazalarimiz.aspx"> <img src="https://www.tudors.com/Uploads/Images/magza.png"> Mağazalar </a></div>
 <div class="mflink Fav"><a href="Hesabim.aspx#/Favorilerim"><img src="https://www.tudors.com/Uploads/Images/favicon.png"> Favoriler </a></div>
 </div>
 <div class="topText" style="margin-right: 77px;"><marquee>99 TL ÜZERİ KARGO BEDAVA | HAFTA İÇİ 24 SAATTE KARGODA</marquee></div>
@@ -618,8 +618,8 @@ Balıkçı Yaka Kazaklar </span></a>
 <li>
 <a target="_self" href="https://www.tudors.com/gomlek?filtre=[{%22FilterType%22:%22tdetay%22,%22FilterId%22:%22263%22,%22FilterValues%22:[%221343%22]}]" title="Uzun Kollu Gömlek">Uzun Kollu Gömlek</a>
 </li>
-<li>
-<a target="_self" href="/gomlek/yazlik" title="Yazlık Gömlekler">Yazlık Gömlekler</a>
+<li><router-link to="/Product"
+>Yazlık Gömlekler</router-link>
 </li>
 <li>
 <a target="_self" href="/gomlek/kislik" title="Kışlık Gömlekler">Kışlık Gömlekler</a>
