@@ -14,16 +14,16 @@
 </div>
 <div id="divThumbList" class="SmallImages" >
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot; }">
+<img v-on:click='imgchange(getid.src1)' id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src1" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot; }">
 </div>
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src2" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot; }">
+<img v-on:click='imgchange(getid.src2)' id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src2" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot; }">
 </div>
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src3" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot; }">
+<img v-on:click='imgchange(getid.src3)' id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src3" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot; }">
 </div>
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src4" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot; }">
+<img v-on:click='imgchange(getid.src4)' id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src4" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot; }">
 </div>
 </div><div class="product-social-icon-wrapper">
 <div class="PaylasTit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PAYLAŞ</font></font></div>
@@ -149,7 +149,7 @@ Kargo Bedava
 <span id="spnTahminiTeslimSuresi" class="right_line" ></span>
 </div></div>
 
-<div id="divUrunEkSecenek" class="Formline BorderNone"><div class="eksecenekLine selectvaryasyon"><span class="left_line">RENK</span><span class="center_line">:</span><span class="right_line"><select name="ddlEkSecenek0" class="eksecenekSelect"><option value="-1">Seçiniz</option><option tipid="2" value="46">Kahve</option></select></span></div><div class="eksecenekLine kutuluvaryasyon"><span class="left_line"><a href="https://api.whatsapp.com/send?phone=908503338377&amp;text=Merhaba," style=" font-size: 13px; color: green; ">Bedeninizi Danışın  <img style="width: 12px;" src="https://www.citypng.com/public/uploads/preview/green-whatsapp-logo-phone-call-icon-11581342743eu6uyok0er.png"></a></span><span class="center_line">:</span><span class="right_line"><span class="size_box nostok" data-stock="0" rel="73" tipid="3">XS<span class="btnnostok " style="display:none;" onclick="varyasyonGelinceHaberVer(this)" data-kart-id="23393" data-urun-id="84482" data-eksecenek-id="0">GELİNCE HABERİN <br> OLSUN <i class="fa fa-circle-thin" aria-hidden="true"></i></span></span><span class="size_box" data-stock="10" rel="71" tipid="3">S</span><span class="size_box" data-stock="11" rel="70" tipid="3">M</span><span class="size_box" data-stock="11" rel="69" tipid="3">L</span><span class="size_box" data-stock="7" rel="72" tipid="3">XL</span><span class="size_box" data-stock="3" rel="74" tipid="3">XXL</span></span></div></div>
+<div id="divUrunEkSecenek" class="Formline BorderNone"><div class="eksecenekLine selectvaryasyon"><span class="left_line">RENK</span><span class="center_line">:</span><span class="right_line"><select name="ddlEkSecenek0" class="eksecenekSelect"><option value="-1">Seçiniz</option><option tipid="2" value="46">Kahve</option></select></span></div><div style="text-align:left;" class="eksecenekLine kutuluvaryasyon"><span class="left_line"><a href="https://api.whatsapp.com/send?phone=908503338377&amp;text=Merhaba," style=" font-size: 13px; color: green; ">Bedeninizi Danışın  <img style="width: 12px;" src="https://www.citypng.com/public/uploads/preview/green-whatsapp-logo-phone-call-icon-11581342743eu6uyok0er.png"></a></span><span class="center_line">:</span><span class="right_line"><span class="size_box nostok" data-stock="0" rel="73" tipid="3">XS<span class="btnnostok " style="display:none;" onclick="varyasyonGelinceHaberVer(this)" data-kart-id="23393" data-urun-id="84482" data-eksecenek-id="0">GELİNCE HABERİN <br> OLSUN <i class="fa fa-circle-thin" aria-hidden="true"></i></span></span><span class="size_box" data-stock="10" rel="71" tipid="3">S</span><span class="size_box" data-stock="11" rel="70" tipid="3">M</span><span class="size_box" data-stock="11" rel="69" tipid="3">L</span><span class="size_box" data-stock="7" rel="72" tipid="3">XL</span><span class="size_box" data-stock="3" rel="74" tipid="3">XXL</span></span></div></div>
 
 <div id="divSatinAl" class="buybutton" >
 
@@ -171,13 +171,7 @@ Kargo Bedava
 <input id="btnHemenAl" type="button" class="buyfastbutton button" value="Hemen Al" >
 </div>
 </div>
-<div id="divMagazaStok" class="Formline BorderNone magazaLink"  style="display: block;">
-<span class="left_line teksatir">
-<a href="#" onclick="MagazaStokGoster()" class="magazaStokLink">
-<span>Stoktaki Mağazalar</span>
-</a>
-</span>
-</div></div>
+</div>
 
 
 <div class="ProductIcon2 ">
@@ -202,27 +196,74 @@ Tüm Kombini Satın Al
 <div id="aFacebookLink2" data-href="http://www.tudors.com/slim-fit-kislik-kareli-oduncu-parcali-model-erkek-gomlek-23393" class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.a53eecb4584348a2ad32ec2ae21f6eae.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fwww.tudors.com%2Fslim-fit-kislik-kareli-oduncu-parcali-model-erkek-gomlek-23393&amp;size=m&amp;text=Sl%C4%B1m%20Fit%20K%C4%B1%C5%9Fl%C4%B1k%20Kareli%20Oduncu%20Par%C3%A7al%C4%B1%20Model%20Erkek%20G%C3%B6mlek&amp;time=1635442770642&amp;type=share&amp;url=http%3A%2F%2Fwww.tudors.com%2Fslim-fit-kislik-kareli-oduncu-parcali-model-erkek-gomlek-23393" data-url="http://www.tudors.com/slim-fit-kislik-kareli-oduncu-parcali-model-erkek-gomlek-23393" style="position: static; visibility: visible; width: 1px; height: 1px;"></iframe>
 
-<div id="divtelegram" class="UTelegram displayNone"  onclick="shareTelegram()">
-<a href="javascript:void(0)" class="telegram">
-<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-<label>Telegram</label>
-</a>
+
 </div>
-</div>
-<div style="margin-top: 12px;">
+<div style="margin-top: 12px; margin-bottom: 30px">
 <td>
-     <p style="font-weight:bold; text-decoration: underline; font-size:12px;">ÜRÜN AÇIKLAMASI</p>
+     <p style="font-weight:bold; text-decoration: underline; font-size:12px;">ÜRÜN AÇIKLAMASI</p>     
 </td>
 <td>
      <p style="font-weight:bold; font-size:12px;">&nbsp;&nbsp; YORUMLAR</p>
 </td>
-   
+</div>
+
+</div>
     
+<div>
+  <table class="table table-striped table-bordered">
 
+  <tbody style="font-size:13px;">
+    <tr>
+      <th scope="row">ÜRÜN</th>
+      <td style="color:grey;">{{getid.özellikler.ürün}}</td>
 
+    </tr>
+    <tr>
+      <th scope="row">KALIP</th>
+      <td style="color:grey;">{{getid.özellikler.kalıp}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">DESEN</th>
+      <td style="color:grey;">{{getid.özellikler.desen}}</td>
+
+    </tr>
+        <tr>
+      <th scope="row">RENK</th>
+      <td style="color:grey;">{{getid.özellikler.renk}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">YAKA TİPİ</th>
+      <td style="color:grey;">{{getid.özellikler.yakatipi}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">KOL TİPİ</th>
+      <td style="color:grey;">{{getid.özellikler.koltipi}}</td>
+
+    </tr>
+        <tr>
+      <th scope="row">MATERYAL</th>
+      <td style="color:grey;">{{getid.özellikler.materyal}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">STİL</th>
+      <td style="color:grey;">{{getid.özellikler.stil}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">SEZON</th>
+      <td style="color:grey;">{{getid.özellikler.sezon}}</td>
+
+    </tr>
+  </tbody>
+</table>
 </div>
 
-</div>
+
+
 
 
 
@@ -239,10 +280,11 @@ Tüm Kombini Satın Al
 <script>
 
 export default {
+
     data() {
         return {
-           id: parseInt(this.$route.params.id ) 
-            
+           id: parseInt(this.$route.params.id ),
+           
         }
         
     },
@@ -253,6 +295,11 @@ export default {
             return this.$store.getters.getTodoById(this.id)
         },
     },
+    methods: {
+        imgchange(arg){
+            this.getid.src = arg
+        }
+    }
     
     
     
@@ -267,7 +314,9 @@ export default {
 
 
 <style scoped>
+        
         @import '../assets/style.css';
+        
     .RightDetail {
     width: calc(100% - 625px);
     width: -webkit-calc(100% - 625px);
@@ -278,6 +327,26 @@ export default {
     padding-left: 35px;
     padding-top: 20px;
 }
+.table {
+  width: 100%;
+  height: 400px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.table-bordered th{
+    font-size: 15px;
+    font-weight: bold;
+    text-align:left;
+    
+  }
+.table-bordered td {
+    font-size: 15px;
+    text-align:left;
+  }
 .basketBtn {
     float: left;
     position: relative;

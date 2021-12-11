@@ -835,7 +835,7 @@ Yeni Ürün
 </template>
 
 <script>
-import { mapState } from 'vuex'
+
 export default {
     
     data(){
@@ -843,14 +843,7 @@ export default {
         products: this.$store.state.products
         }
     },
-    mounted(){
-        this.$store.dispatch('loadProducts')
-    },
-    computed: {
-        ...mapState([
-    'products'
-  ])
-    } 
+   
      
 }
 </script>

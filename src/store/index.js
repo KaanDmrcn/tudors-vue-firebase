@@ -4,7 +4,8 @@ import axios from 'axios'
 
 export default createStore({
     state: {
-        products: []
+        products: [],
+        özellikler: []
     },
 
 
@@ -14,11 +15,7 @@ export default createStore({
         getTodoById: (state) => (id) => {
             return state.products.find(products => products.id === id)
         },
-        getAllProducts() {
-            axios.get('http://localhost:8080/api/products')
-                .then(response => { this.state.products = response.data; })
 
-        },
 
     },
 
