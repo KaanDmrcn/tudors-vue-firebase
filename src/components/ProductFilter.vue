@@ -709,21 +709,26 @@ Tek Cepli
 <div class="clear"></div>
 <div class="ProductListContent ">
 <div id="ProductPageProductList" class="ProductList sort_3 Active">
+
+
+
+<div v-for="product in products"  :key="product.id">
+<router-link :to="{ name: 'ProductDetailPage', params: {id: product.id}}">
+
 <div class="ItemOrj col-lg-4 col-md-4 col-sm-4 col-xs-6">
 <div class="productItem NewActive">
 <div class="productImage">
-<a class="detailLink detailUrl" data-id="22117" title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22117">
-<img class="resimOrginal lazyImage entered loaded" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" data-original="https://www.tudors.com/Uploads/UrunResimleri/buyuk/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" alt="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" data-second="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" data-ll-status="loaded">
+<a class="detailLink detailUrl" data-id="22117" title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/ProductDetailPage/1">
+<img @click="mymethod(id)" class="resimOrginal lazyImage entered loaded" :src="product.src" data-original="https://www.tudors.com/Uploads/UrunResimleri/buyuk/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" alt="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" data-second="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" data-ll-status="loaded">
 </a>
 </div>
-<div class="productDetail videoAutoPlay" data-id="22117" data-variant-id="80296">
-<div class="productMarka" style="display: none;">TUDORS</div>
-<div class="productName detailUrl" data-id="22117"><router-link to="/ProductDetailPage"> Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt </router-link></div>
-<div class="productOnYazi"><span>Slim Fit Dar Kesim Baskılı Basic Bisiklet Yaka Siyah Erkek T-shirt</span></div>
+<div class="productDetail videoAutoPlay">
+<div class="productName detailUrl" data-id="22117">  {{ product.name }} </div>
+<div class="productOnYazi"><span>{{ product.name }}</span></div>
 <div class="productPrice IndirimVar">
 <div class="discountPrice">
 <span>
-₺49,99
+{{ product.indirimlifiyat }}
 </span>
 <span class="discountKdv">
 KDV Dahil
@@ -731,7 +736,7 @@ KDV Dahil
 </div>
 <div class="regularPrice">
 <span>
-₺69,99
+{{ product.eskifiyat }}
 </span>
 <span class="regularKdv">
 KDV Dahil
@@ -764,7 +769,7 @@ Favorilere Ekle
 <span class="discountIcon_s1">%29</span>
 <span class="discountIcon_s2">İndirim</span>
 <div class="discountIconDetail">
-%29İndirim
+{{ product.indirim }}
 </div>
 </div>
 <div class="newIcon tip" title="Yeni Ürün">
@@ -777,142 +782,14 @@ Yeni Ürün
 <div id="productListVariantDetailcb884ddce8964c339fff07b238b344a4" class="productItemVariantDetail" style="display:none" ></div>
 </div>
 </div>
-<div class="ItemOrj col-lg-4 col-md-4 col-sm-4 col-xs-6">
-<div class="productItem NewActive">
-<div class="productImage">
-<a class="detailLink detailUrl" data-id="22115" title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22115">
-<img class="resimOrginal lazyImage entered loaded" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-2c9d82.jpg" data-original="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-8afaf4.jpg" alt="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" data-second="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-2c9d82.jpg" data-ll-status="loaded">
-</a>
+
+</router-link>
 </div>
-<div class="productDetail videoAutoPlay" data-id="22115" data-variant-id="80284">
-<div class="productMarka" style="display: none;">TUDORS</div>
-<div class="productName detailUrl" data-id="22115"><a title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22115">Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt</a></div>
-<div class="productOnYazi"><span>Slim Fit Dar Kesim Baskılı Basic Bisiklet Yaka Siyah Erkek T-shirt</span></div>
-<div class="productPrice IndirimVar">
-<div class="discountPrice">
-<span>
-₺49,99
-</span>
-<span class="discountKdv">
-KDV Dahil
-</span>
-</div>
-<div class="regularPrice">
-<span>
-₺69,99
-</span>
-<span class="regularKdv">
-KDV Dahil
-</span>
-</div>
-</div>
-</div>
-<div style="display: none;" class="urunListeAdet">
-<a class="urunListeAdetAzalt qtyMinus">Azalt</a>
-<input value="1" class="urunListeAdetTextBox txtSepetAdet txtSepetAdet9cf9324560c543e88c28610b742ff315" type="number" min="1" step="1" data-double="False" formnovalidate="">
-<a class="urunListeAdetArtir qtyPlus">Artır</a>
-</div>
-<div class="productIcon">
-<div class="favori favoriContent-22115-80284">
-<a onclick="productFavoritesProcess(-1,2,22115,80284,1,this,0,1,'9cf9324560c543e88c28610b742ff315')" init="false" data-action="1" class="favoriteslist listfavoriPasif tip" onload="urunfavoriKontrol(this,22115)" title="Favorilere Ekle">
-Favorilere Ekle
-</a>
-</div>
-<div class="mycartIcon tip" title="Sepete Ekle">
-<a onclick="productListAddToCartV2('9cf9324560c543e88c28610b742ff315',22115,80284,0,1,'/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22115',1)" class="btnAddToCart" data-productid="22115" data-variantid="80284" data-unique="9cf9324560c543e88c28610b742ff315">
-<span class="urunListeSpanSepeteEkle">Sepete Ekle</span>
-</a>
-</div>
-<div class="examineIcon tip detailLink" title="Ürünü İncele">
-<a href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22115" class="detailUrl" data-id="22115">
-Ürünü İncele
-</a>
-</div>
-<div class="discountIcon tip">
-<span class="discountIcon_s1">%29</span>
-<span class="discountIcon_s2">İndirim</span>
-<div class="discountIconDetail">
-%29İndirim
-</div>
-</div>
-<div class="newIcon tip" title="Yeni Ürün">
-Yeni Ürün
-</div>
-<div class="ozelAlan2">
-<a href="https://www.tudors.com/kampanyalar/3-t-shirt-11990-tl"><span>3 T-Shirt 119,90₺</span></a>
-</div>
-</div>
-<div id="productListVariantDetail9cf9324560c543e88c28610b742ff315" class="productItemVariantDetail" style="display:none" ></div>
-</div>
-</div>
-<div class="ItemOrj col-lg-4 col-md-4 col-sm-4 col-xs-6">
-<div class="productItem NewActive">
-<div class="productImage">
-<a class="detailLink detailUrl" data-id="22109" title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22109">
-<img class="resimOrginal lazyImage entered loaded" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-b932a6.jpg" data-original="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-569a90.jpg" alt="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" data-second="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-b932a6.jpg" data-ll-status="loaded">
-</a>
-</div>
-<div class="productDetail videoAutoPlay" data-id="22109" data-variant-id="80248">
-<div class="productMarka" style="display: none;">TUDORS</div>
-<div class="productName detailUrl" data-id="22109"><a title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22109">Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt</a></div>
-<div class="productOnYazi"><span>Slim Fit Dar Kesim Baskılı Basic Bisiklet Yaka Siyah Erkek T-shirt</span></div>
-<div class="productPrice IndirimVar">
-<div class="discountPrice">
-<span>
-₺49,99
-</span>
-<span class="discountKdv">
-KDV Dahil
-</span>
-</div>
-<div class="regularPrice">
-<span>
-₺69,99
-</span>
-<span class="regularKdv">
-KDV Dahil
-</span>
-</div>
-</div>
-</div>
-<div style="display: none;" class="urunListeAdet">
-<a class="urunListeAdetAzalt qtyMinus">Azalt</a>
-<input value="1" class="urunListeAdetTextBox txtSepetAdet txtSepetAdet736d2d4acdb54dc097bd2f7c7f87ba34" type="number" min="1" step="1" data-double="False" formnovalidate="">
-<a class="urunListeAdetArtir qtyPlus">Artır</a>
-</div>
-<div class="productIcon">
-<div class="favori favoriContent-22109-80248">
-<a onclick="productFavoritesProcess(-1,2,22109,80248,1,this,0,1,'736d2d4acdb54dc097bd2f7c7f87ba34')" init="false" data-action="1" class="favoriteslist listfavoriPasif tip" onload="urunfavoriKontrol(this,22109)" title="Favorilere Ekle">
-Favorilere Ekle
-</a>
-</div>
-<div class="mycartIcon tip" title="Sepete Ekle">
-<a onclick="productListAddToCartV2('736d2d4acdb54dc097bd2f7c7f87ba34',22109,80248,0,1,'/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22109',1)" class="btnAddToCart" data-productid="22109" data-variantid="80248" data-unique="736d2d4acdb54dc097bd2f7c7f87ba34">
-<span class="urunListeSpanSepeteEkle">Sepete Ekle</span>
-</a>
-</div>
-<div class="examineIcon tip detailLink" title="Ürünü İncele">
-<a href="/slim-fit--baskili-basic-bisiklet-yaka-erkek-t-shirt-22109" class="detailUrl" data-id="22109">
-Ürünü İncele
-</a>
-</div>
-<div class="discountIcon tip">
-<span class="discountIcon_s1">%29</span>
-<span class="discountIcon_s2">İndirim</span>
-<div class="discountIconDetail">
- %29İndirim
-</div>
-</div>
-<div class="newIcon tip" title="Yeni Ürün">
-Yeni Ürün
-</div>
-<div class="ozelAlan2">
-<a href="https://www.tudors.com/kampanyalar/3-t-shirt-11990-tl"><span>3 T-Shirt 119,90₺</span></a>
-</div>
-</div>
-<div id="productListVariantDetail736d2d4acdb54dc097bd2f7c7f87ba34" class="productItemVariantDetail" style="display:none" ></div>
-</div>
-</div>
+
+
+
+
+
 </div>
 <div id="divScrollContainer"></div>
 </div>
@@ -956,6 +833,25 @@ Yeni Ürün
 
 </div>
 </template>
+
+<script>
+export default {
+    data(){
+        return{
+        products: this.$store.state.products
+        }
+    },
+    methods: {
+        meyMethod(arg){
+            this.$store.state.temp = arg
+        }
+
+    }
+}
+</script>
+
+
+
 
 <style>
 @import '../assets/style.css';

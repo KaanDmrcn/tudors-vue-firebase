@@ -8,22 +8,22 @@
 <div class="ProductDetailMainRow">
     <div class="leftImage">
 <div class="Images imageZoomPreview">
-<img id="imgUrunResim" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek" class="cloudzoom" onclick="window.zoom.V1.clickPreviweImage()" data-cloudzoom="easeTime : 0 , galleryFade : false,animationTime : 0 , zoomImage:'/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg', zoomSizeMode : 'image' , zoomPosition: &quot;inside&quot;, zoomOffsetX:0" style="user-select: none;">
+<img id="imgUrunResim" :src="getid.src" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek" class="cloudzoom" onclick="window.zoom.V1.clickPreviweImage()" data-cloudzoom="easeTime : 0 , galleryFade : false,animationTime : 0 , zoomImage:'/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg', zoomSizeMode : 'image' , zoomPosition: &quot;inside&quot;, zoomOffsetX:0" style="user-select: none;">
 </div>
 <div id="divVideoGoruntulemeAlan" class="videoGoruntuleme" style="display: none">
 </div>
 <div id="divThumbList" class="SmallImages" >
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot; }">
+<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-f58b3-.jpg&quot; }">
 </div>
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot; }">
+<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src2" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-cc0d5a.jpg&quot; }">
 </div>
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot; }">
+<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src3" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu--8e67-.jpg&quot; }">
 </div>
 <div class="AltImgCapSmallImg">
-<img id="imgurunresmi" class="cloudzoom-gallery" src="https://www.tudors.com/Uploads/UrunResimleri/thumb/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot; }">
+<img id="imgurunresmi" class="cloudzoom-gallery" :src="getid.src4" alt="Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek"  onclick="window.zoom.V1.clickThumb()" data-cloudzoom="{ &quot;easeTime&quot; : 0 , &quot;galleryFade&quot; : false, &quot;animationTime&quot; : 0, &quot;useZoom&quot; : &quot;#imgUrunResim&quot; , &quot;image&quot; : &quot;/Uploads/UrunResimleri/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot;, &quot;zoomImage&quot; : &quot;/Uploads/UrunResimleri/buyuk/dr220006-352slim-fit-kislik-kareli-odu-4198-4.jpg&quot; }">
 </div>
 </div><div class="product-social-icon-wrapper">
 <div class="PaylasTit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PAYLAŞ</font></font></div>
@@ -61,7 +61,7 @@ Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek
 </div><div class="ProductName">
 <h1>
 <span>
-Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek
+{{getid.name}}
 </span>
 
 </h1>
@@ -108,14 +108,14 @@ Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek
 <span class="left_line lineTitle">Fiyat</span>
 <span class="center_line lineTitle">:</span>
 <span id="fiyat" class="right_line" >
-<span class="spanFiyat">₺299,99</span><span class="spanKdv">(KDV Dahil)</span>
+<span class="spanFiyat">{{getid.eskifiyat}}</span><span class="spanKdv">(KDV Dahil)</span>
 </span>
 </div>
 <div class="Formline IndirimliFiyatContent">
 <span class="left_line lineTitle">İndirimli</span>
 <span class="center_line lineTitle">:</span>
 <span id="indirimliFiyat" class="right_line indirimliFiyat" >
-<span class="spanFiyat">₺149,99</span><span class="spanKdv">(KDV Dahil)</span>
+<span class="spanFiyat">{{getid.indirimlifiyat}}</span><span class="spanKdv">(KDV Dahil)</span>
 </span>
 </div>
 </div>
@@ -235,6 +235,33 @@ Tüm Kombini Satın Al
 
 </div></div></div></div></div></div></div>
 </template>
+
+<script>
+
+export default {
+    data() {
+        return {
+           id: parseInt(this.$route.params.id ) 
+            
+        }
+        
+    },
+    computed : {
+        
+        getid(){  
+                     
+            return this.$store.getters.getTodoById(this.id)
+        }
+    },
+
+  
+    
+
+    
+}
+</script>
+
+
 
 <style scoped>
         @import '../assets/style.css';

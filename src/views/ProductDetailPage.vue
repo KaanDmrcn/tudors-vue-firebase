@@ -4,6 +4,7 @@
   <div><ProductDetail></ProductDetail></div>
   <div><HomePageBottom></HomePageBottom></div>
   
+  
   </div>
 </template>
 
