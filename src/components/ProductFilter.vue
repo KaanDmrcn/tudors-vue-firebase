@@ -719,7 +719,7 @@ Tek Cepli
 <div class="productItem NewActive">
 <div class="productImage">
 <a class="detailLink detailUrl" data-id="22117" title="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" href="/ProductDetailPage/1">
-<img @click="mymethod(id)" class="resimOrginal lazyImage entered loaded" :src="product.src" data-original="https://www.tudors.com/Uploads/UrunResimleri/buyuk/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" alt="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" data-second="/Uploads/UrunResimleri/thumb/slim-fit-dar-kesim-bisiklet-yaka-baski-5e1495.jpg" data-ll-status="loaded">
+<img class="resimOrginal lazyImage entered loaded" :src="product.src" alt="Slim Fit Dar Kesim Bisiklet Yaka Baskılı Erkek T-Shirt" >
 </a>
 </div>
 <div class="productDetail videoAutoPlay">
@@ -835,12 +835,23 @@ Yeni Ürün
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
+    
     data(){
         return{
         products: this.$store.state.products
         }
-    }
+    },
+    mounted(){
+        this.$store.dispatch('loadProducts')
+    },
+    computed: {
+        ...mapState([
+    'products'
+  ])
+    } 
+     
 }
 </script>
 

@@ -20,6 +20,7 @@ export default {
     Menu,
     HomePage,
     HomePageBottom,
-  }
+  },
+  
 }
 </script>

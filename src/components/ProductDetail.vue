@@ -251,8 +251,11 @@ export default {
         getid(){  
                      
             return this.$store.getters.getTodoById(this.id)
-        }
+        },
     },
+    
+    
+    
 
   
     
