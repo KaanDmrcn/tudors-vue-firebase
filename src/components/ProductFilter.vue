@@ -840,12 +840,6 @@ export default {
         return{
         products: this.$store.state.products
         }
-    },
-    methods: {
-        meyMethod(arg){
-            this.$store.state.temp = arg
-        }
-
     }
 }
 </script>
