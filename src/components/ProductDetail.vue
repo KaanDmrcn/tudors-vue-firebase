@@ -275,6 +275,96 @@ Tüm Kombini Satın Al
 
 
 </div></div></div></div></div></div></div>
+
+
+
+
+<div style="margin-top:20px;" >
+ <div id="divBenzerUrun">   
+<div class="JKatAdi">
+<span style="margin-bottom:25px;" class="bold">
+<span class="satir1">Benzer Ürünler</span>
+</span>
+</div>
+</div>
+<div style=" margin-left: 10%;">
+    <div style="float:left; margin-top: 290px;">
+        <img style="width:55px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAWlBMVEX///8AAACAgICFhYW2tra6urrAwMC9vb1/f3+4uLjCwsKcnJz8/Pyzs7Pw8PCvr69fX19TU1NaWlra2tptbW1CQkLn5+d4eHjHx8c3NzfNzc2np6eSkpKioqKHeaFgAAACBElEQVR4nO3d61LCMBTE8aT1gqIIiHiD939NnWEcpeTjqWey+/89wdnppuHalAIAAAAAAAAAAAAAAAAAAAAgw3653mzH5+wx5nOsJ7vsQeayqD9eHrJnmcVQfw3Zw8xhrH/ts8eJN5wFrMfsecItzgPWRfZA0cZJwPqaPVGwi4B1zB4p1rSi396yZwrVCPgutSFeVrTWj+yhIg2NgFfZQ0WyDPiYPVSk1hqUCkhFeydf0VZA+YreZQ8VSf4mI1/RVkAq2hPLikoFtNwmpAK2KnqdPVSkVsDb7KEitSoqdQXlA7IGe0dFeycfsFVR1mBP5CtquU3IB6SiPaGivWOb6F2rojfZQ0WSv8m0Kip1BVsB77OHiiS/BuXvovJrsFVR1mBP5Cv6qV7RlXrA8iRe0davtrWuYCm7acBD9kTR9K+h/jrUv5fq74cGr2kMXpcavLewKKr8e3yLtSj/WZttUaW+ljH4WN+iqPLfH7IWNVBUBaZFNYhoUFSDiBS1NwYRDdYim4YC+f+PshY1yP9V3eB5Cha3G4OiGkQ0WIvyz6exLarUo8xs16JBRIOiGkSkqL0xLapBRIO1KPU8b4Nnsjcjiv0+TP9sBIPzLS6Lqpdwumkss+eZgfxZQedXUe4gnRP5M7sMzl0rZXVcb7YH4bPzAAAAAAAAAAAAAAAAAAAAgH/xBXaXEHqdU2ueAAAAAElFTkSuQmCC" alt="">
+    </div>
+
+<div v-for="benzerürünler in getid.benzerürünler"  :key="benzerürünler.id">
+<router-link :to="{ name: 'ProductDetailPage', params: {id: benzerürünler.id}}">
+    <div class="owl-item active" style="float:left; width: 345px; margin-right: 20px;">
+    <div class="productItem">
+    <div class="productImage">
+    <a class="detailLink detailUrl" data-id="16330" title="Slim Fit Dar Kesim Düz Polo Yaka Erkek T-Shirt" href="/plain-pique-t-shirt--61/1-slim-fit-t-shirt-16330">
+    <img v-on:click="changedetail()" class="resimOrginal lazyImage entered loaded" :src="benzerürünler.src1" alt="Slim Fit Dar Kesim Düz Polo Yaka Erkek T-Shirt" >
+    </a>
+    </div>
+    <div class="productDetail videoAutoPlay" data-id="16330" data-variant-id="60097">
+    <div class="productMarka" style="display: none;">TUDORS</div>
+    <div class="productName detailUrl" data-id="16330"><a v-on:click="changedetail()" title="Slim Fit Dar Kesim Düz Polo Yaka Erkek T-Shirt" href="/plain-pique-t-shirt--61/1-slim-fit-t-shirt-16330">{{benzerürünler.name}}</a></div>
+    <div class="productPrice IndirimVar">
+    <div class="discountPrice">
+    <span>
+    {{benzerürünler.indirimlifiyat}}
+    </span>
+<span class="discountKdv">
+KDV Dahil
+</span>
+</div>
+<div class="regularPrice">
+<span>
+{{benzerürünler.eskifiyat}}
+</span>
+<span class="regularKdv">
+KDV Dahil
+</span>
+</div>
+</div>
+</div>
+<div style="display: none;" class="urunListeAdet">
+<a class="urunListeAdetAzalt qtyMinus">Azalt</a>
+<input value="1" class="urunListeAdetTextBox txtSepetAdet txtSepetAdet263456f6cf104261ac833d2e5d325fd9" type="number" min="1" step="1" data-double="False" formnovalidate="">
+<a class="urunListeAdetArtir qtyPlus">Artır</a>
+</div>
+<div class="productIcon">
+<div class="favori favoriContent-16330-60097">
+<img style="width:30px; border-radius: 90%;" src="https://previews.123rf.com/images/thaiprayboy/thaiprayboy2001/thaiprayboy200100007/138238558-.jpg" alt="Avatar">
+</div>
+<div class="examineIcon tip detailLink" title="Ürünü İncele">
+<a href="/plain-pique-t-shirt--61/1-slim-fit-t-shirt-16330" class="detailUrl" data-id="16330">
+Ürünü İncele
+</a>
+</div>
+
+<div class="discountIcon tip">
+<span class="discountIcon_s1">%50</span>
+<span class="discountIcon_s2">İndirim</span>
+<div class="discountIconDetail">
+%50İndirim
+</div>
+</div>
+</div>
+<div id="productListVariantDetail263456f6cf104261ac833d2e5d325fd9" class="productItemVariantDetail" style="display:none" ></div>
+</div>
+</div>
+
+</router-link>
+</div>
+
+  <div style="float:left; margin-top: 290px;">
+        <img class="rotateimg180" style="width:55px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAWlBMVEX///8AAACAgICFhYW2tra6urrAwMC9vb1/f3+4uLjCwsKcnJz8/Pyzs7Pw8PCvr69fX19TU1NaWlra2tptbW1CQkLn5+d4eHjHx8c3NzfNzc2np6eSkpKioqKHeaFgAAACBElEQVR4nO3d61LCMBTE8aT1gqIIiHiD939NnWEcpeTjqWey+/89wdnppuHalAIAAAAAAAAAAAAAAAAAAAAgw3653mzH5+wx5nOsJ7vsQeayqD9eHrJnmcVQfw3Zw8xhrH/ts8eJN5wFrMfsecItzgPWRfZA0cZJwPqaPVGwi4B1zB4p1rSi396yZwrVCPgutSFeVrTWj+yhIg2NgFfZQ0WyDPiYPVSk1hqUCkhFeydf0VZA+YreZQ8VSf4mI1/RVkAq2hPLikoFtNwmpAK2KnqdPVSkVsDb7KEitSoqdQXlA7IGe0dFeycfsFVR1mBP5CtquU3IB6SiPaGivWOb6F2rojfZQ0WSv8m0Kip1BVsB77OHiiS/BuXvovJrsFVR1mBP5Cv6qV7RlXrA8iRe0davtrWuYCm7acBD9kTR9K+h/jrUv5fq74cGr2kMXpcavLewKKr8e3yLtSj/WZttUaW+ljH4WN+iqPLfH7IWNVBUBaZFNYhoUFSDiBS1NwYRDdYim4YC+f+PshY1yP9V3eB5Cha3G4OiGkQ0WIvyz6exLarUo8xs16JBRIOiGkSkqL0xLapBRIO1KPU8b4Nnsjcjiv0+TP9sBIPzLS6Lqpdwumkss+eZgfxZQedXUe4gnRP5M7sMzl0rZXVcb7YH4bPzAAAAAAAAAAAAAAAAAAAAgH/xBXaXEHqdU2ueAAAAAElFTkSuQmCC" alt="">
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
 </template>
 
 <script>
@@ -284,7 +374,6 @@ export default {
     data() {
         return {
            id: parseInt(this.$route.params.id ),
-           
         }
         
     },
@@ -298,8 +387,12 @@ export default {
     methods: {
         imgchange(arg){
             this.getid.src = arg
-        }
-    }
+        },
+        changedetail(){
+            this.id = parseInt(this.$route.params.id )           
+        },
+    },
+    
     
     
     
@@ -316,7 +409,39 @@ export default {
 <style scoped>
         
         @import '../assets/style.css';
-        
+        .rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#divBenzerUrun .JKatAdi {
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: left;
+}
+#divBenzerUrun .JKatAdi .bold {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#divBenzerUrun .JKatAdi .bold .satir1 {
+    display: inline-block;
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    background: #fff;
+    padding: 0 22
+px
+;
+    text-transform: uppercase;
+}        
     .RightDetail {
     width: calc(100% - 625px);
     width: -webkit-calc(100% - 625px);
@@ -338,13 +463,13 @@ export default {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .table-bordered th{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     text-align:left;
     
   }
 .table-bordered td {
-    font-size: 15px;
+    font-size: 14px;
     text-align:left;
   }
 .basketBtn {

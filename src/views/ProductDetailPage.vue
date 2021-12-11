@@ -21,6 +21,7 @@ export default {
     Menu,
     ProductDetail,
     HomePageBottom,
-  }
+  },
+  
 }
 </script>
