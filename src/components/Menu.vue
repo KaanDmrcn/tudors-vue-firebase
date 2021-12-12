@@ -23,10 +23,10 @@
             Üye Girişi
         </a></router-link>
     </li>
-    <li class="headerUyeOl">
+    <li class="headerUyeOl"><router-link :to="{ name: 'SignUp'}">
         <a href="javascript:void(0);" onclick="window.mem.init.bind('quickmembership')" title="Üye Ol">
             Üye Ol
-        </a>
+        </a></router-link>
     </li>
     <li class="headerSocialConnect" style="display:none;">
 

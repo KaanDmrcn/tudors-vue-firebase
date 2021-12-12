@@ -1,6 +1,6 @@
 <template>
 
-<div class="solSagBosluk" style="margin-top: 40px">
+<div class="solSagBosluk" >
     
 <span class="spanTittle hideMobile">Üye Girişi</span>
 <div class="userWrapper emailDiv">
