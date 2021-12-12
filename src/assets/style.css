@@ -15669,14 +15669,9 @@ body.sepetimBody .BasketDetail.SiparisNotuContent {
 }
 
 .leftBlock .panel-heading a:after {
-    content: '\f067';
     font-family: fontawesomepro;
     float: right;
     font-weight: 400
-}
-
-.leftBlock .panel-heading.active a:after {
-    content: '\f068'
 }
 
 .leftBlock .category-vertical-filters>div {

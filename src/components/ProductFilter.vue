@@ -97,19 +97,11 @@ Gri
 </li>
 </ul>
 </div>
-<div class="panel panel-default vertical-filter-panel div-secenek div-secenek-3">
-<div style="font-size: 11px;
-    color: #000;
-    width: 100%;
-    font-weight: 600;
-    float: left;
-    background: #fff;
-    line-height: 37px;
-    text-transform: uppercase;" class="panel-heading">
-
-    <img style="width:10px;content: '\f067';    float: right;    font-weight: 400;" src="https://e7.pngegg.com/pngimages/630/733/png-clipart-computer-icons-symbol-plus-icon-miscellaneous-plus-thumbnail.png" alt="">
-Beden
-
+<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-258" :class="{ active: showBeden }">
+<div class="panel-heading" :class="{ active: showBeden }">
+<a class="panel-title" href="javascript:void(0);" @click="showBeden = !showBeden"><img class="filterimg" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" >
+BEDEN
+</a>
 </div>
 <ul class="list-group secenek secenek-3" data-total-elements="6">
 <li class="liFiltreElement list-group-item"  title="XS" data-type="secenek" data-id="3" data-value="73" onclick="setFilter(this)">
@@ -144,9 +136,9 @@ XXL
 </li>
 </ul>
 </div>
-<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-258">
-<div class="panel-heading">
-<a class="panel-title" href="javascript:void(0);">
+<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-258" :class="{ active: showKalıp }">
+<div class="panel-heading" :class="{ active: showKalıp }">
+<a class="panel-title" href="javascript:void(0);" @click="showKalıp = !showKalıp"><img class="filterimg" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" >
 KALIP
 </a>
 </div>
@@ -163,9 +155,9 @@ Slim Fit - Dar Kesim
 </li>
 </ul>
 </div>
-<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-259">
-<div class="panel-heading">
-<a class="panel-title" href="javascript:void(0);">
+<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-259" :class="{ active: showDesen }">
+<div class="panel-heading" :class="{ active: showDesen }">
+<a class="panel-title" href="javascript:void(0);" @click="showDesen = !showDesen"><img class="filterimg" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" >
 DESEN
 </a>
 </div>
@@ -192,9 +184,9 @@ Düz
 </li>
 </ul>
 </div>
-<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-262">
-<div class="panel-heading">
-<a class="panel-title" href="javascript:void(0);">
+<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-262" :class="{ active: showRenk }">
+<div class="panel-heading" :class="{ active: showRenk }" >
+<a class="panel-title" href="javascript:void(0);" @click="showRenk = !showRenk"><img class="filterimg" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" >
 RENK
 </a>
 </div>
@@ -276,9 +268,9 @@ Kahve
 </li>
 </ul>
 </div>
-<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-260">
-<div class="panel-heading">
-<a class="panel-title" href="javascript:void(0);">
+<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-260" :class="{ active: showMateryal }">
+<div class="panel-heading" :class="{ active: showMateryal }">
+<a class="panel-title" href="javascript:void(0);" @click="showMateryal = !showMateryal"><img class="filterimg" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" >
 MATERYAL
 </a>
 </div>
@@ -295,9 +287,9 @@ Pamuk-Polyester
 </li>
 </ul>
 </div>
-<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-265">
-<div class="panel-heading">
-<a class="panel-title" href="javascript:void(0);">
+<div class="panel panel-default vertical-filter-panel div-tdetay div-tdetay-265" :class="{ active: showCepTipi }">
+<div class="panel-heading" :class="{ active: showCepTipi }">
+<a class="panel-title" href="javascript:void(0);" @click="showCepTipi = !showCepTipi"> <img class="filterimg" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" >
 CEP TİPİ
 </a>
 </div>
@@ -321,7 +313,7 @@ Fiyat Aralığı
 </a>
 </div>
 <div class="FiyatSlider">
-<div class="slider-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="width: 100%; left: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+<div class="slider-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="width: 100%; left: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default ui-state-hover" style="left: 15%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
 <div class="amount">₺39,00 - ₺70,00</div>
 </div>
 </div>
@@ -339,15 +331,15 @@ Fiyat Aralığı
 <div class="categoryTitleText">
 <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
 <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-<a itemprop="item" href="/">
-<span itemprop="name">Anasayfa</span>
+<a itemprop="item" href="/"><router-link :to="{ name: 'Home'}">
+<span itemprop="name">Anasayfa</span></router-link>
 <meta itemprop="position" content="1">
 </a>&gt;
 </li>
 <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-<a itemprop="item" target="_self" href="/t-shirt"><span itemprop="name">T-Shirt</span><meta itemprop="position" content="2"></a> &gt; </li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-<a itemprop="item" target="_self" href="/yaka-tipi-1009"><span itemprop="name">YAKA TİPİ</span><meta itemprop="position" content="3"></a> &gt; </li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-<a itemprop="item" target="_self" href="/t-shirt/bisiklet-yaka"><span itemprop="name">Bisiklet Yaka</span><meta itemprop="position" content="4"></a></li>
+<a itemprop="item" target="_self" href="/t-shirt"><span itemprop="name">GÖMLEK</span><meta itemprop="position" content="2"></a> &gt; </li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a itemprop="item" target="_self" href="/yaka-tipi-1009"><span itemprop="name">SEZON</span><meta itemprop="position" content="3"></a> &gt; </li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<a itemprop="item" target="_self" href="/t-shirt/bisiklet-yaka"><router-link :to="{ name: 'Product'}"><span itemprop="name">YAZLIK</span></router-link><meta itemprop="position" content="4"></a></li>
 </ul>
 </div>
 <div class="appliedFilter registeredFiltresListContent kaydedilmisAramalar" style="display: none;">
@@ -688,7 +680,7 @@ Tek Cepli
         <a onclick="sortingClick(1000)" class=""><span>Stoktakiler</span></a>
     </li>
     <li class="appliedFilter FiltrelemeUrunAdet">
-        <span>3 Ürün</span>
+        <span>{{products.length}} Ürün</span>
         <div class="blockSelect">
             <a class="btnCatSorting sort_3 Active" data-type="4">
                 <i class="fa fa-th"></i>
@@ -840,9 +832,21 @@ export default {
     
     data(){
         return{
-        products: this.$store.state.products
+        products: this.$store.state.products,
+        showBeden: false,
+        showKalıp: false,
+        showDesen: false,
+        showRenk: false,
+        showMateryal: false,
+        showCepTipi: false,
         }
     },
+    methods: {
+    myFilter: function() {
+      this.isActive = !this.isActive;
+      // some code to filter users
+    }
+  }
    
      
 }
@@ -853,4 +857,23 @@ export default {
 
 <style>
 @import '../assets/style.css';
+@import '../assets/ticimax.css';
+.filterimg{
+    float: right;
+    width: 15px;
+    margin-top: 10px;
+}
+.category-vertical-filters .vertical-filter-panel .list-group-item:before {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 0;
+    content: "";
+    border: 1px solid #d7d7d7;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+}
+
 </style>
