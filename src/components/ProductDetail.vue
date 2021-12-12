@@ -162,7 +162,7 @@ Kargo Bedava
 </span>
 </div>
 <div class="basketBtn">
-<input type="button" value="Sepete Ekle" class="Addtobasket button btnAddBasketOnDetail">
+<input v-on:click="sepeteekle" type="button" value="Sepete Ekle" class="Addtobasket button btnAddBasketOnDetail">
 </div><div class="UFavorilerimeEkle">
 <a id="aFavoriEkleBtn" onclick="javascript:FavoriUrunDetay();" data-action="1" title="Favorilere Ekle" class="tipL"  data-original-title="Favorilere Ekle">
 <span class="box1"> <img class="fa fa-heart" style="margin-top: 10px; width: 25px;" src="https://icons-for-free.com/iconfiles/png/512/heart+like+love+valentine+icon-1320084901929215407.png" > Favorilere Ekle</span>
@@ -390,6 +390,9 @@ export default {
         },
         changedetail(){
             this.id = parseInt(this.$route.params.id )           
+        },
+        sepeteekle(){
+            this.$store.state.mycart.push(this.getid)
         },
     },
     

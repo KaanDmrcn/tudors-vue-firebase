@@ -2,9 +2,9 @@
 <div>
 <div id="header" class="homeHeader">
 <div class="headerContent">
-<div id="logo">
+<div id="logo"><router-link :to="{ name: 'Home'}">
 <a class="logo" href="https://www.tudors.com/"><img alt="logo" src="https://www.tudors.com/Uploads/Images/logo.png"></a> <a class="logo Mlogo" href="/"><img alt="logo" src="https://www.tudors.com/Uploads/EditorUploads/mobillogonew.png"></a>
-<div class="MF">
+</router-link><div class="MF">
 <div class="mflink H-blog">&nbsp;</div>
 <div class="mflink Magza"><a href="magazalarimiz.aspx"> <img src="https://www.tudors.com/Uploads/Images/magza.png"> Mağazalar </a></div>
 <div class="mflink Fav"><a href="Hesabim.aspx#/Favorilerim"><img src="https://www.tudors.com/Uploads/Images/favicon.png"> Favoriler </a></div>
@@ -18,10 +18,10 @@
 <div id="lang_flag_container"><div id="langHover"><div id="lang" class="flag flag-tr"><span>Türkçe</span></div></div><div id="lang-detail" style="display: none;"><div class="language" ><p>Dil Değiştir</p><a class="flag flag-tr active" href="javascript:void(0);">TÜRKÇE</a><a class="flag flag-en" href="/en">ENGLISH</a><a class="flag flag-sr" href="/sr">SRPSKI</a><div class="clear-both"></div></div></div></div>
 <div class="welcome" >
 <div class="memberWelcomeContent" ><ul>
-    <li class="headerUyeGiris">
+    <li class="headerUyeGiris"><router-link :to="{ name: 'SignIn'}">
         <a href="javascript:void(0);" onclick="window.mem.init.bind('login');" title="Hesabım">
             Üye Girişi
-        </a>
+        </a></router-link>
     </li>
     <li class="headerUyeOl">
         <a href="javascript:void(0);" onclick="window.mem.init.bind('quickmembership')" title="Üye Ol">
@@ -41,8 +41,8 @@
 </ul>
 </div>
 <div id="divHeaderCart" class="mycart">
-<a href="/Sepetim" rel="nofollow">
-<span class="sepetTecxt">Sepetim</span>
+<a href="/Sepetim" rel="nofollow"><router-link :to="{ name: 'MyCart'}">
+<span class="sepetTecxt">Sepetim</span></router-link>
 <span id="spnTopSepetToplamUrun" class="sepetUrunSayisi">0</span>
 <span class="sepetUrun">Ürün</span>
 <span id="spnTopSepetToplamTutar" class="sepetTopTutar" style="display: none;">₺0,00</span>
