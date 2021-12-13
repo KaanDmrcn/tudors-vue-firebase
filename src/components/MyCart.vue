@@ -43,8 +43,8 @@
             <div class="BasketDetail BasketDetailSepetList">
                 <div id="sepetimExtraUrunContent" style="display: none;">
                 </div>
-                <div class="sepett">
-                    <a id="linkAlisverisDevam" class="alisverisedevamet button" target="_parent" href="/t-shirt/bisiklet-yaka?min=47&amp;max=62">Alışverişe Devam Et</a>
+                <div class="sepett"><router-link :to="{ name: 'Product'}">
+                    <a id="linkAlisverisDevam" class="alisverisedevamet button" target="_parent" href="/t-shirt/bisiklet-yaka?min=47&amp;max=62">Alışverişe Devam Et</a></router-link>
                     <div class="clear"></div>
                     <div class="sepetListConent">
                         <div class="sepetItemContent">
@@ -118,7 +118,7 @@
                         </div>
                         
                         
-                        <a id="mainHolder_ucSepetim_btnSepetiTemizle" onclick="return sepetTemizleKontrol();"  class="sepetiTemizle" href="javascript:__doPostBack('ctl00$mainHolder$ucSepetim$btnSepetiTemizle','')">Sepeti Temizle</a>
+                        <a @click="sepetitemizle" id="mainHolder_ucSepetim_btnSepetiTemizle" onclick="return sepetTemizleKontrol();"  class="sepetiTemizle" href="javascript:__doPostBack('ctl00$mainHolder$ucSepetim$btnSepetiTemizle','')">Sepeti Temizle</a>
                     </div>
 
                     
@@ -251,6 +251,14 @@ export default {
                 this.$store.state.sepettoplam += this.temp[index].indirimlifiyat*this.temp[index].sepetsayısı   
             }  
         },
+        sepetitemizle(){
+            
+            for (let index = 0; index < 100; index++ ) {
+                this.$store.commit("REMOVE_OBJECT_FROM_ARRAY" , index)   
+            }
+            this.güncelle()
+
+        }
         
     },
    

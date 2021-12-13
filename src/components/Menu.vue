@@ -47,19 +47,38 @@
 <span class="sepetUrun">Ürün</span>
 <span id="spnTopSepetToplamTutar" class="sepetTopTutar" style="display: none;">₺0,00</span>
 </a>
-<div class="CartProduct" style="display: none;">
+<div  class="CartProduct" style="display: none;">
+    <ul v-for="mycart in mycarts"  :key="mycart.id" class="SProduct" style="display: block;">
+        <li class="topCardItem">
+            <a href="" rel="nofollow">
+                <img :src="mycart.src1" alt="Slim Fit Dar Kesim Viskon Pamuk Uzun Kol Gömlek" onerror="this.onerror=null;this.src='/Scripts/images/resimyok_ufak.jpg';" style="height: 70px;">
+                <span class="SepettopAd"><span>{{mycart.name}}</span><span> M</span></span>
+                <span class="sepetTopBirimFiyat" style="display: none;"> </span>
+                <span class="SepetTopAdet">
+                    &nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;{{mycart.sepetsayısı}}
+                </span>
+                <span class="sepetTopSatisBirimi" style="display: none">Adet </span>
+                <span class="sepetTopFiyat" style="display: none">₺{{mycart.indirimlifiyat*mycart.sepetsayısı}} </span>
+                <input class="hddProductId" name="hddProductId" type="hidden" value="22695">
+                <input class="hddVariantId" name="hddVariantId" type="hidden" value="82122">
+            </a>
+            <a onclick="window.cart.remove.executeClient(82122,0,'top')" rel="nofollow">
+                <span><img @click="deleteItem(mycart.id)" style="width:10px; margin-right:0px; cursor:pointer;" src="https://www.seekpng.com/png/detail/254-2545026_delete-button-nor-white-cross-icon-png.png" alt=""></span>
+            </a>
+        </li>
+    </ul>
 <div class="CartProductInner"><ul id="ulUstSepetteUrunYok" class="divustSepetteUrunYok">
     <li>
-        <span class="spanustSepetteUrunYok">Sepetinizde ürün bulunmamaktadır.</span>
+        <span style="display: none;" class="spanustSepetteUrunYok">Sepetinizde ürün bulunmamaktadır.</span>
     </li>
 </ul>
 <ul class="SPrice">
     <li>
         <span>Genel Toplam</span>:
-        <span id="spnUstSepetToplamTutar" class="sepetToplamTutar">₺0,00</span>
+        <span id="spnUstSepetToplamTutar" class="sepetToplamTutar">₺{{sepettoplamı.toFixed(2)}}</span>
     </li>
-</ul>
-<a href="/Sepetim" class="button headerCartBtn" style="display: none;" rel="nofollow">Sepetim</a>
+</ul><router-link :to="{ name: 'MyCart'}">
+<a  class="button headerCartBtn" style="display: none;" rel="nofollow">Sepetim</a></router-link>
 <a href="javascript:window.mem.init.bind('login','/SiparisTamamla');" class="button headerOrderBtn" style="display: none;" rel="nofollow">SİPARİŞİ TAMAMLA</a></div>
 </div>
 </div>
@@ -1077,8 +1096,21 @@ export default {
     data(){
         return{
         mycarts: this.$store.state.mycart,
+        sepettoplamı: this.$store.state.sepettoplam,
+        temp: this.$store.state.mycart,
         }
     },
+    methods: {
+        deleteItem(id){
+            this.$store.commit("REMOVE_OBJECT_FROM_ARRAY" , id)
+            this.$store.state.sepettoplam = 0  
+            this.temp= this.$store.state.mycart
+            for (let index = 0; index < this.temp.length; index++ ) {
+                this.$store.state.sepettoplam += this.temp[index].indirimlifiyat*this.temp[index].sepetsayısı   
+            } 
+        },
+    },
+        
    
      
 }
