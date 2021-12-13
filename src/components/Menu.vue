@@ -43,7 +43,7 @@
 <div id="divHeaderCart" class="mycart">
 <a href="/Sepetim" rel="nofollow"><router-link :to="{ name: 'MyCart'}">
 <span class="sepetTecxt">Sepetim</span></router-link>
-<span id="spnTopSepetToplamUrun" class="sepetUrunSayisi">0</span>
+<span id="spnTopSepetToplamUrun" class="sepetUrunSayisi">{{mycarts.length}}</span>
 <span class="sepetUrun">Ürün</span>
 <span id="spnTopSepetToplamTutar" class="sepetTopTutar" style="display: none;">₺0,00</span>
 </a>
@@ -1069,6 +1069,20 @@ Tarzını <a href="/kampanyalar/outlet">SATIN AL ...</a></div>
 </div>
 </template>
 
+
+<script>
+
+export default {
+    
+    data(){
+        return{
+        mycarts: this.$store.state.mycart,
+        }
+    },
+   
+     
+}
+</script>
 
 <style scoped>
         @import '../assets/style.css';

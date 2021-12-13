@@ -85,11 +85,11 @@
                                             <div class="adetGuncelleContent">
                                                 
                                                 <a href="javascript:void(0);" class="urunListeAdetAzalt qtyMinus" style="display: none;">Azalt</a>
-                                                <input id="txtbxAdet_80297" type="number" class="textbox txtSepetAdet"  name="txtbxAdet_80297" value="1" min="1" max="999999" step="1" data-double="False">
+                                                <input v-model="mycart.sepetsayısı" id="txtbxAdet_80297" type="number" class="textbox txtSepetAdet"  name="txtbxAdet_80297"  min="1" max="999999" step="1" data-double="False">
 
                                                 <span class="sepetAdetMobile" style="display: none">x <span>Adet</span></span>
                                                 <a href="javascript:void(0);" class="urunListeAdetArtir qtyPlus" style="display: none;">Artır</a>
-                                                <a id="mainHolder_ucSepetim_rptSepet_lnkBtnAdetGuncelle_0" onclick="return adetGuncelleKontrol(this);"  class="AdetGuncelle" data-urun-id="80297" data-kampanya-id="0" href="javascript:__doPostBack('ctl00$mainHolder$ucSepetim$rptSepet$ctl00$lnkBtnAdetGuncelle','')">Güncelle</a>
+                                                <a @click="güncelle(mycart.id, mycart.sepetsayısı)" id="mainHolder_ucSepetim_rptSepet_lnkBtnAdetGuncelle_0" onclick="return adetGuncelleKontrol(this);"  class="AdetGuncelle" data-urun-id="80297" data-kampanya-id="0" href="javascript:__doPostBack('ctl00$mainHolder$ucSepetim$rptSepet$ctl00$lnkBtnAdetGuncelle','')">Güncelle</a>
                                             </div>
                                             
                                         </div>
@@ -97,16 +97,16 @@
                                             
                                             <div class="sepetItemB sepetItemB4 sepetFiyatBold" style="width:32%;">
                                                 <span class="sepetItemB4_1">
-                                                    {{mycart.eskifiyat}}
+                                                    ₺{{(mycart.eskifiyat*mycart.sepetsayısı).toFixed(2)}}
                                                 </span>
                                                 
                                                 <span class="sepetItemB4_2">
-                                                    {{mycart.indirimlifiyat}}
+                                                   ₺{{(mycart.indirimlifiyat*mycart.sepetsayısı).toFixed(2)}}
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="sepetItemB sepetItemB5">
-                                             <img style="width: 12px;" src="https://www.pinclipart.com/picdir/big/538-5385185_grey-cross-icon-png-clipart.png">
+                                             <img @click="deleteItem(mycart.id)" style="width: 12px; cursor:pointer;" src="https://www.pinclipart.com/picdir/big/538-5385185_grey-cross-icon-png-clipart.png">
                                         </div>
                                     </div>
                                 
@@ -114,7 +114,7 @@
                     </div></div>
                     <div class="sepetListAlt">
                         <div style="margin-top: 10px; color: brown;" >
-                            Ücretsiz kargo hakkı kazanmanıza ₺49,01 kaldı!
+                            
                         </div>
                         
                         
@@ -150,7 +150,7 @@
                     <ul>
                         <li>
                             <span>Sipariş Tutarı</span>
-                            <span class="tut ng-binding">₺49,99</span>
+                            <span class="tut ng-binding">₺{{sepettoplamı.toFixed(2)}}</span>
                         </li>
                         <!-- ngIf: cart.toplamKDV != '0' && !kdvDahilGoster -->
                         <!-- ngIf: cart.urunOzellestirmeFiyatlari != '0' -->
@@ -166,7 +166,7 @@
                         <!-- ngIf: cart.indirimlerToplami > 0 && false -->
                         <li class="genelToplam">
                             <span>Sepet Toplamı </span>
-                            <span class="tut ng-binding">₺49,99</span>
+                            <span class="tut ng-binding">₺{{sepettoplamı.toFixed(2)}}</span>
                         </li>
                         <!-- ngIf: cart.tahminiTeslimSuresi > 0 || cart.ayniGunTeslimat -->
                     </ul>
@@ -235,7 +235,23 @@ export default {
     data(){
         return{
         mycarts: this.$store.state.mycart,
+        sepettoplamı: this.$store.state.sepettoplam,
+        temp: this.$store.state.mycart,
         }
+    },
+    methods: {
+        deleteItem(id){
+            this.$store.commit("REMOVE_OBJECT_FROM_ARRAY" , id)
+            this.güncelle()
+        },
+        güncelle(){ 
+            this.$store.state.sepettoplam = 0  
+            this.temp= this.$store.state.mycart
+            for (let index = 0; index < this.temp.length; index++ ) {
+                this.$store.state.sepettoplam += this.temp[index].indirimlifiyat*this.temp[index].sepetsayısı   
+            }  
+        },
+        
     },
    
      

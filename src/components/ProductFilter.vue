@@ -720,7 +720,7 @@ Tek Cepli
 <div class="productPrice IndirimVar">
 <div class="discountPrice">
 <span>
-{{ product.indirimlifiyat }}
+₺{{ product.indirimlifiyat }}
 </span>
 <span class="discountKdv">
 KDV Dahil
@@ -728,7 +728,7 @@ KDV Dahil
 </div>
 <div class="regularPrice">
 <span>
-{{ product.eskifiyat }}
+₺{{ product.eskifiyat }}
 </span>
 <span class="regularKdv">
 KDV Dahil
@@ -758,8 +758,8 @@ Favorilere Ekle
 </a>
 </div>
 <div class="discountIcon tip">
-<span class="discountIcon_s1">%29</span>
-<span class="discountIcon_s2">İndirim</span>
+<span class="discountIcon_s1">{{ product.indirim }}</span>
+<span class="discountIcon_s2"></span>
 <div class="discountIconDetail">
 {{ product.indirim }}
 </div>
@@ -768,7 +768,7 @@ Favorilere Ekle
 Yeni Ürün
 </div>
 <div class="ozelAlan2">
-<a href="https://www.tudors.com/kampanyalar/3-t-shirt-11990-tl"><span>3 T-Shirt 119,90₺</span></a>
+<a href="https://www.tudors.com/kampanyalar/3-t-shirt-11990-tl"><span></span></a>
 </div>
 </div>
 <div id="productListVariantDetailcb884ddce8964c339fff07b238b344a4" class="productItemVariantDetail" style="display:none" ></div>

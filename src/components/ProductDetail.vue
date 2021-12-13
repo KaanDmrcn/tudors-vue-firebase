@@ -108,14 +108,14 @@ Slım Fit Kışlık Kareli Oduncu Parçalı Model Erkek Gömlek
 <span class="left_line lineTitle">Fiyat</span>
 <span class="center_line lineTitle">:</span>
 <span id="fiyat" class="right_line" >
-<span class="spanFiyat">{{getid.eskifiyat}}</span><span class="spanKdv">(KDV Dahil)</span>
+<span class="spanFiyat">₺{{getid.eskifiyat}}</span><span class="spanKdv">(KDV Dahil)</span>
 </span>
 </div>
 <div class="Formline IndirimliFiyatContent">
 <span class="left_line lineTitle">İndirimli</span>
 <span class="center_line lineTitle">:</span>
 <span id="indirimliFiyat" class="right_line indirimliFiyat" >
-<span class="spanFiyat">{{getid.indirimlifiyat}}</span><span class="spanKdv">(KDV Dahil)</span>
+<span class="spanFiyat">₺{{getid.indirimlifiyat}}</span><span class="spanKdv">(KDV Dahil)</span>
 </span>
 </div>
 </div>
@@ -383,6 +383,10 @@ export default {
                      
             return this.$store.getters.getTodoById(this.id)
         },
+        getcartid(){  
+                     
+            return this.$store.getters.getCartId(this.id)
+        },
     },
     methods: {
         imgchange(arg){
@@ -392,7 +396,14 @@ export default {
             this.id = parseInt(this.$route.params.id )           
         },
         sepeteekle(){
+            if(this.getcartid == null){
             this.$store.state.mycart.push(this.getid)
+            this.$store.state.sepettoplam += this.getid.indirimlifiyat            
+            }
+            else{
+            this.getcartid.sepetsayısı = this.getcartid.sepetsayısı +1
+            this.$store.state.sepettoplam += this.getid.indirimlifiyat
+            }
         },
     },
     

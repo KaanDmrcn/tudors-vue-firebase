@@ -26,7 +26,8 @@ export default createStore({
                 id: 4,
                 src: "https://www.tudors.com/Uploads/Slider/qwd-487.jpg?t=20211104085534",
             },
-        ]
+        ],
+        sepettoplam: 0,
     },
 
 
@@ -39,6 +40,10 @@ export default createStore({
         getSrcId: (state) => (id) => {
             return state.slides.find(slides => slides.id === id)
         },
+        getCartId: (state) => (id) => {
+            return state.mycart.find(mycart => mycart.id === id)
+        },
+
 
 
     },
@@ -49,7 +54,14 @@ export default createStore({
     mutations: {
         SET_PRODUCTS(state, products) {
             state.products = products
-        }
+        },
+        REMOVE_OBJECT_FROM_ARRAY: (state, payload) => {
+            const i = state.mycart.map(mycart => mycart.id).indexOf(payload);
+            state.mycart.splice(i, 1);
+        },
+
+
+
 
 
 
